@@ -1,3 +1,17 @@
 bower_components
 node_modules
 package-lock.json
+nbactions.xml
+*.iml
+.ipr
+.iws
+.idea
+.DS_Store
+.orig
+
+.*.log
+
+target/
+settings/
+classpath/
+project/
