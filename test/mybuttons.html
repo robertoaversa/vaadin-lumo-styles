@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<script src="../../webcomponentsjs/webcomponents-loader.js"></script>
+<link rel="import" href="../../vaadin-button/vaadin-button.html">
+<link rel="import" href="../icons.html">
+<link rel="import" href="all-imports.html">
+<!-- <link rel="import" href="compact-theme.html"> -->
+<!--  <link rel="import" href="airy-theme.html"> -->
+<link rel="import" href="small-theme.html">
+<!-- <link rel="import" href="large-theme.html"> -->
+<link rel="import" href="visual-style_old.html">
+
+<h4>Types</h4>
+
+<vaadin-button theme="primary">Primary</vaadin-button>
+<vaadin-button>Secondary</vaadin-button>
+<vaadin-button theme="tertiary">Tertiary</vaadin-button>
+<vaadin-button theme="tertiary-inline">Tertiary Inline</vaadin-button>
+
+<h4>Contrast</h4>
+
+
+<vaadin-button theme="contrast primary">Primary</vaadin-button>
+<vaadin-button theme="contrast">Secondary</vaadin-button>
+<vaadin-button theme="contrast tertiary">Tertiary</vaadin-button>
+
+<h4>Success</h4>
+
+<vaadin-button theme="success primary">Primary</vaadin-button>
+<vaadin-button theme="success">Secondary</vaadin-button>
+<vaadin-button theme="success tertiary">Tertiary</vaadin-button>
+
+<h4>Error</h4>
+
+<vaadin-button theme="error primary">Primary</vaadin-button>
+<vaadin-button theme="error">Secondary</vaadin-button>
+<vaadin-button theme="error tertiary">Tertiary</vaadin-button>
+
+<h4>size</h4>
+<vaadin-button theme="large">Large</vaadin-button>
+<vaadin-button>Normal</vaadin-button>
+<vaadin-button theme="small">Small</vaadin-button>
+
+<h4>icons</h4>
+
+<!-- Icon in place of label -->
+<vaadin-button theme="icon" aria-label="Add new item">
+    <iron-icon icon="lumo:plus"></iron-icon>
+</vaadin-button>
+
+<!-- With "prefix/suffix" slot -->
+<vaadin-button theme="icon" aria-label="Delete item">
+    <iron-icon icon="lumo:cross" slot="prefix"></iron-icon>
+</vaadin-button>

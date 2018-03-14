@@ -46,7 +46,7 @@ Reporting [issues and feature request](https://github.com/vaadin/vaadin-lumo-sty
 1. Make sure you have [npm](https://www.npmjs.com/) installed.
 
 1. When in the `vaadin-lumo-styles` directory, run `npm install` and then `bower install` to install dependencies.
-
+1. install polymer cli npm install -g polymer-cli
 1. Run `polymer serve --open`, browser will automatically open the component API documentation.
 
 1. You can also open demo/documentation by adding **demo** to the URL, for example:

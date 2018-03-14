@@ -1,0 +1,124 @@
+<!-- Add directly to index.html or use a separate HTML import -->
+<!-- please use this file only for purpose to override the custom property of the LUMO THEME  -->
+<!-- you can fund the custom property of the LUMO THEME at https://cdn.vaadin.com/vaadin-lumo-styles -->
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<custom-style>
+  <style>
+    html {
+      --lumo-shade-5pct: rgba(0, 0, 0, 0.05);
+      --lumo-shade-10pct: rgba(0, 0, 0, 0.1);
+      --lumo-shade-20pct: rgba(0, 0, 0, 0.2);
+      --lumo-shade-30pct: rgba(0, 0, 0, 0.3);
+      --lumo-shade-40pct: rgba(0, 0, 0, 0.4);
+      --lumo-shade-50pct: rgba(0, 0, 0, 0.5);
+      --lumo-shade-60pct: rgba(0, 0, 0, 0.6);
+      --lumo-shade-70pct: rgba(0, 0, 0, 0.7);
+      --lumo-shade-80pct: rgba(0, 0, 0, 0.8);
+      --lumo-shade-90pct: rgba(0, 0, 0, 0.9);
+      --lumo-shade: rgba(0, 0, 0, 1);
+
+      --lumo-primary-color: hsl(21, 89%, 63%);
+      --lumo-primary-contrast-color: #FFF;
+      --lumo-primary-color-50pct: hsla(21, 89%, 63%, 0.54);
+      --lumo-primary-color-40pct: hsla(21, 89%, 63%, 0.37);
+      --lumo-primary-color-10pct: hsla(21, 89%, 63%, 0.1);
+
+      --lumo-primary-text-color : hsl(23, 98%, 63%) ;
+
+      --lumo-error-color: hsl(340, 81%, 52%);
+      --lumo-error-color-50pct: hsla(340, 81%, 52%, 0.5);
+      --lumo-error-color-10pct: hsla(340, 81%, 52%, 0.1);
+      --lumo-error-text-color: hsl(3, 92%, 53%);
+
+      --lumo-success-color: hsl(178, 50%, 50%);
+      --lumo-success-color-50pct: hsla(145, 76%, 44%, 0.55);
+      --lumo-success-color-10pct: hsla(145, 76%, 44%, 0.12);
+      --lumo-success-text-color: hsl(145, 100%, 32%);
+
+      --lumo-border-radius: 1px;
+      --lumo-font-family: "Lato", sans-serif;
+
+      /*added */
+
+      --lumo-base-color : hsl(204,15%,95%);
+      --lumo-header-text-color: hsl(0, 0%, 0%);
+      --lumo-body-text-color: hsl(0, 0%, 0%);
+      --lumo-secondary-text-color: hsl(223, 3%, 56%);
+      --lumo-disabled-text-color: hsl(212, 18%, 84%);
+
+      /*size */
+
+      --lumo-size-s: 18px;
+      --lumo-size-m: 36px;
+      --lumo-size-l: 45px;
+    }
+
+    iron-icon {
+      color: var(--lumo-primary-text-color);
+    }
+
+    vaadin-button iron-icon {
+      color: inherit;
+    }
+  </style>
+</custom-style>
+
+<dom-module id="button-theme" theme-for="vaadin-button">
+<template>
+<style>
+:host {
+--lumo-border-radius: 4px;
+}
+</style>
+</template>
+</dom-module>
+
+
+<!--<dom-module id="text-field-theme" theme-for="vaadin-text-field vaadin-text-area">-->
+  <!--<template>-->
+    <!--<style>-->
+      <!--[part="label"] {-->
+        <!--font-weight: 600;-->
+      <!--}-->
+
+      <!--[part="input-field"] {-->
+        <!--background-color: var(&#45;&#45;lumo-base-color) !important;-->
+        <!--border: 1px solid var(&#45;&#45;lumo-contrast-30pct);-->
+        <!--box-sizing: border-box;-->
+      <!--}-->
+
+      <!--:host([focus-ring]) [part="input-field"] {-->
+        <!--border-color: var(&#45;&#45;lumo-primary-color);-->
+      <!--}-->
+
+      <!--:host([invalid]) [part="input-field"] {-->
+        <!--background-color: var(&#45;&#45;lumo-base-color);-->
+        <!--border-color: var(&#45;&#45;lumo-error-color);-->
+      <!--}-->
+    <!--</style>-->
+  <!--</template>-->
+<!--</dom-module>-->
+
+<!--<dom-module id="menu-overlay-theme" theme-for="vaadin-dropdown-menu-overlay vaadin-context-menu-overlay">-->
+  <!--<template>-->
+    <!--<style>-->
+      <!--[part="content"] {-->
+        <!--padding: var(&#45;&#45;lumo-space-s) 0;-->
+      <!--}-->
+    <!--</style>-->
+  <!--</template>-->
+<!--</dom-module>-->
+
+<!--<dom-module id="combo-box-overlay-theme" theme-for="vaadin-combo-box-overlay">-->
+  <!--<template>-->
+    <!--<style>-->
+      <!--/* This doesn't work for some reason, it only removes the border/visual padding */-->
+      <!--iron-list {-->
+        <!--&#45;&#45;iron-list-items-container: {-->
+          <!--border-top: var(&#45;&#45;lumo-space-s) solid transparent;-->
+          <!--border-bottom: var(&#45;&#45;lumo-space-s) solid transparent;-->
+        <!--}-->
+      <!--}-->
+    <!--</style>-->
+  <!--</template>-->
+</dom-module>
